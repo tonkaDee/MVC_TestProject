@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2Dice">
+
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageV1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/die1" />
+
+        <ImageView
+            android:id="@+id/imageV2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/die6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="227dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageV3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/die1" />
+
+        <ImageView
+            android:id="@+id/imageV4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/die6" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/m5"
+        android:layout_width="213dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:hint="Player 1 Wager"
+        android:textColor="#922B21"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editBalanceDeposit"
+        android:layout_width="208dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:hint="Player 2 Wager"
+        android:textColor="#922B21"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv4result"
+        android:layout_width="269dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="#aaccaa"
+        android:maxLines="7"
+        android:minLines="3"
+        android:textColor="#cc77cc"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBalanceDeposit" />
+
+    <TextView
+        android:id="@+id/tv4result2"
+        android:layout_width="269dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="#aaccaa"
+        android:maxLines="7"
+        android:minLines="3"
+        android:textColor="#cc77cc"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4result" />
+
+    <Button
+        android:id="@+id/player1Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Player1Roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/m5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/player2Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Player2Roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/editBalanceDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/player1Roll"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
